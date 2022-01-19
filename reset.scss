@@ -1,0 +1,25 @@
+@import "variable";
+h1{
+        color: $lightgreen;
+        margin-bottom: 20px;
+        
+}
+h2,h5{
+        color: $lightgreen;
+        
+}
+h3{
+        color: $white;
+}
+p{
+        color: $darkgreen;
+        margin-bottom: 2px;
+}
+.btn{
+        padding: 5px 30px;
+        background-color: $lightgreen;
+        color: $white;
+}
+.form_row{
+        margin: 10px 0px;
+}
