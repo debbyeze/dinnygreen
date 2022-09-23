@@ -1,410 +1,543 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="_icons.">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="_icons." />
+
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- header -->
     <header>
       <div class="nav_top container-fluid d-flex justify-content-between">
-          <div class="nav_top_list">
-              <ul class="list-unstyled d-flex">
-                  <li class="me-5"> <span class="list_span">Call:</span> +234 9012624162  </li>
-                  <li> <span class="list_span">Support:</span> info@yourcompany.com</li>
-              </ul>
-          </div>
+        <div class="nav_top_list">
+          <ul class="list-unstyled d-flex">
+            <li class="me-5">
+              <span class="list_span">Call:</span> +234 9012624162
+            </li>
+            <li>
+              <span class="list_span">Support:</span> info@yourcompany.com
+            </li>
+          </ul>
+        </div>
 
-          <div class="nav_top_btn d-flex ">
-              <button class="btn login_btn">Log in</button>
-              <button class="btn register_btn">Register</button>
-          </div>
+        <div class="nav_top_btn d-flex">
+          <button class="btn login_btn">Log in</button>
+          <button class="btn register_btn"><a class="nav-link text-white" href="#register">Register</a></button>
+        </div>
       </div>
 
-     <!-- navbar -->
-      <nav class="navbar navbar-expand-sm navbar-light  nav_bar">
-        <div class="container-fluid  nav_container">
-            <a class="navbar-brand" href="index.html">
-                <img src="./dinnyimages/logo.png" alt="" width="70px" height="50px">
-              </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-sm navbar-light nav_bar">
+        <div class="container-fluid nav_container">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="./dinnyimages/logo.png"
+              alt=""
+              width="70px"
+              height="50px"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavbar"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class=" nav collapse navbar-collapse navbar_list" >
+          <div class="nav collapse navbar-collapse navbar_list">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link"  href="./index.html">Home</a>
+                <a class="nav-link" href="./index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
+                <a class="nav-link" href="#service">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Instructors</a>
+                <a class="nav-link" href="#instructors">Instructors</a>
               </li>
-              <li class=" dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <li class="dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
                   Courses
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
                   <li><a class="dropdown-item" href="#">Action</a></li>
                   <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
+                <a class="nav-link" href="#blog">Blog</a>
               </li>
             </ul>
-            <button class="contact_btn  btn me-3">Contact</button>
+            <button class="contact_btn btn me-3">
+              <a class="nav-link text-white" href="#contact">Contact</a>
+            </button>
           </div>
         </div>
       </nav>
     </header>
 
-   <!-- main_container -->
+    <!-- main_container -->
     <main>
       <section class="container-fluid first_container">
-        <div class=" container first_container_content">
+        <div class="container first_container_content">
           <h1>Give Your Child A Chance To Be Unique</h1>
-          <p class="content_paragraph">Experts agree that a child's personality doesn't fully form until they are in elementary school. </p>
-          <p class="signin_paragraph"><a href="#">Sign in</a> to enroll your child</p>
+          <p class="content_paragraph">
+            Experts agree that a child's personality doesn't fully form until
+            they are in elementary school.
+          </p>
+          <p class="signin_paragraph">
+            <a href="#">Sign in</a> to enroll your child
+          </p>
 
           <div class="first_container_btn d-flex">
             <button class="btn signup_btn">Sign up</button>
             <button class="btn learnmore_btn">Learn more</button>
           </div>
         </div>
-        <div class=" blur_container"></div>
-          
+        <div class="blur_container"></div>
       </section>
 
-      <section class="container-fluid second_container ">
-        <div class="container-fluid d-flex  second_container_div">
-        <div class="second_container_img container">
-          <img class="student_img" src="./dinnyimages/Group 66.png" width="400px" height="350px" alt="">
-
-        </div>
-
-        <div class="container  second_container_content">
-          <h1>Advance Learning System Around The World</h1>
-          <p>We have made a collaborative effort in bringing together scientific expertise from other countries, steered jointly by their governments on the basis of shared, policy-driven interests. </p>
-          
-          <div class="mb-5 mt-3 figure_container d-flex ">
-            <div class="figure container">
-              <h2>25K <sup>+</sup></h2>
-              <p class="small">Teachers</p>
-            </div>
-            <div  class="figure container">
-              <h2>74K <sup>+</sup></h2>
-              <p class="small">Active Courses</p>
-            </div>
-            <div class=" container">
-              <h2>250</h2>
-              <p class="small">Extra Curriular</p>
-            </div>
-            
+      <section class="container-fluid second_container">
+        <div class="container-fluid d-flex second_container_div">
+          <div class="second_container_img container">
+            <img
+              class="student_img"
+              src="./dinnyimages/Group 66.png"
+              width="400px"
+              height="350px"
+              alt=""
+            />
           </div>
-          <button class="btn">Learn more</button>
+
+          <div class="container second_container_content" id="about">
+            <h1>Advance Learning System Around The World</h1>
+            <p>
+              We have made a collaborative effort in bringing together
+              scientific expertise from other countries, steered jointly by
+              their governments on the basis of shared, policy-driven interests.
+            </p>
+
+            <div class="mb-5 mt-3 figure_container d-flex">
+              <div class="figure container">
+                <h2>25K <sup>+</sup></h2>
+                <p class="small">Teachers</p>
+              </div>
+              <div class="figure container">
+                <h2>74K <sup>+</sup></h2>
+                <p class="small">Active Courses</p>
+              </div>
+              <div class="container">
+                <h2>250</h2>
+                <p class="small">Extra Curriular</p>
+              </div>
+            </div>
+            <button class="btn">Learn more</button>
           </div>
         </div>
-        <div class="side_img flex-end"><img src="dinnyimages/Mask Group (2).png" height="140px" width="100px"  alt="">
+        <div class="side_img flex-end">
+          <img
+            src="dinnyimages/Mask Group (2).png"
+            height="140px"
+            width="100px"
+            alt=""
+          />
         </div>
+      </section>
 
-        </section>
-
-        <section class="container-fluid third_container">
-         <article class="container features_header_page ">
+      <section class="container-fluid third_container" id="service">
+        <article class="container features_header_page">
           <h3>Our Features</h3>
-          <p>Dinny Green International School is nurtured in grace and truth, raising green, flourishing and successful children.
+          <p>
+            Dinny Green International School is nurtured in grace and truth,
+            raising green, flourishing and successful children.
           </p>
-         </article>
+        </article>
 
-          <div class="container-fluid  d-flex feature_content">
-            <div class="container container_content d-flex">
-              <div class="container feature_img"><img src="./dinnyimages/Ellipse 8.png"  alt=""></div>
-              <div class="feature_text"> 
-                <h5>Awesome Teachers</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod ukkf tempor incididunt u.</p>
-              </div>
+        <div class="container-fluid d-flex feature_content">
+          <div class="container container_content d-flex">
+            <div class="container feature_img">
+              <img src="./dinnyimages/Ellipse 8.png" alt="" />
             </div>
-
-            <div class="container container_content  d-flex ">
-              <div class="container feature_img"><img src="./dinnyimages/Ellipse 8.png" alt=""></div>
-              <article class="feature_text">
-                <h5>Global Recoghition</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod ukkf tempor incididunt u.</p>
-              </article>
+            <div class="feature_text">
+              <h5>Awesome Teachers</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod ukkf tempor incididunt u.
+              </p>
             </div>
           </div>
 
-          <div class="container-fluid  d-flex feature_content">
-            <div class="container container_content  d-flex">
-              <div class="container feature_img"><img src="./dinnyimages/Ellipse 8.png"  alt=""></div>
-              <article class="feature_text"> 
-                <h5>Extra cirricular activities</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod ukkf tempor incididunt u.</p>
-              </article>
+          <div class="container container_content d-flex">
+            <div class="container feature_img">
+              <img src="./dinnyimages/Ellipse 8.png" alt="" />
             </div>
-
-            <div class="container container_content  d-flex ">
-              <div class="container feature_img"><img src="./dinnyimages/Ellipse 8.png" alt=""></div>
-              <article class="feature_text">
-                <h5>Government Approved</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod ukkf tempor incididunt u.</p>
-              </article>
-            </div>
-
-
+            <article class="feature_text">
+              <h5>Global Recoghition</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod ukkf tempor incididunt u.
+              </p>
+            </article>
           </div>
-        </section>
+        </div>
 
-        <section class=" fourth_container">
-
-          <div class=" d-flex fourth_container_div">
-            <div class="container fourth_container_content">
-              <h2>Find Out More About
-                Our Learning Experience</h2>
-                <p>We have built hospitals, arranged doctor appointments  have the diagnose and treat yourem ipsu r aol ad meniam, quis nostrud exercitation.</p>
-                
-                <ul>
-                  <li>Culture in diversity</li>
-                  <li>We have built hospitals, arranged doctor.</li>
-                  <li>We have built hospitals, arranged doctor.</li>
-                </ul>
-                <button class="btn">Learn more</button>
-
+        <div class="container-fluid d-flex feature_content">
+          <div class="container container_content d-flex">
+            <div class="container feature_img">
+              <img src="./dinnyimages/Ellipse 8.png" alt="" />
             </div>
-
-            <div class=" fourth_container_img">
-              <img src="./dinnyimages/Group 64.png" width="600px" height="400px" alt="">
-
-            </div>
-          </div>
-        </section>
-
-        <section class="container-fluid fifth_container p-5">
-          <article class="container fifth_container_header">
-            <h3>Popular Classes</h3>
-            <p>We have built hospitals, arranged doctor appointments  have the diagnose and treat yourem ipsu r aol ad meniam, quis nostrud exercitation.</p>
-          </article>
-
-          <div class="container-fluid mt-5 mb-5 fifth_container_div row justify-content-between justify-content-center">
-
-            <!-- card -->
-            <div class="card  card_container col-4 " >
-              <div class="card-img-top pt-3 justify-content-center "><img class="d-block" src="./dinnyimages/Ellipse 16.png" alt=""> </div>
-              <div class="card-body mb-4 ">
-                <div class="card_body_top d-flex justify-content-center mb-2">
-                  <p class="card-text me-3">35 Lessons </p> <p class="card-text">  28th April 2021</p>
-                </div>
-                <h5 class="card-title text-center">Creche</h5>
-                <p class="card-text text-center">For anyone validating Framer as a professional prototyping tool.</p>
-              </div>
-              <div class="enroll_now1 text-center"><p>Enroll Now </p></div>
-            </div>
-
-
-              <!-- card -->
-              <div class="card  card_container col-4 " >
-                <div class=" card-img-top pt-3 justify-content-center "><img class="d-block" src="./dinnyimages/Ellipse 17.png" alt=""> </div>
-                <div class="card-body mb-4 ">
-                  <div class="card_body_top d-flex justify-content-center mb-2">
-                    <p class="card-text me-3">35 Lessons </p> <p class="card-text">  28th April 2021</p>
-                  </div>
-                  <h5 class="card-title text-center">Transiton</h5>
-                  <p class="card-text text-center">For anyone validating Framer as a professional prototyping tool.</p>
-                </div>
-                <div class="enroll_now text-center"><p>Enroll Now </p></div>
-              </div>
-  
-             
-
-
-                <!-- card -->
-                <div class="card  card_container col-4 ">
-                  <div class="card-img-top pt-3 justify-content-center "><img class="d-block" src="./dinnyimages/Ellipse 18.png" alt=""> </div>
-                  <div class="card-body mb-4 ">
-                    <div class="card_body_top d-flex justify-content-center mb-2">
-                      <p class="card-text me-3">35 Lessons </p> <p class="card-text">  28th April 2021</p>
-                    </div>
-                    <h5 class="card-title text-center">Nursery</h5>
-                    <p class="card-text text-center">For anyone validating Framer as a professional prototyping tool.</p>
-                  </div>
-                  <div class="enroll_now text-center"><p>Enroll Now </p></div>
-                </div>
-    
-            
-          </div>
-          <div class=" container fifth_container_btn"><button class="btn">view all Courses</button></div>
-          
-        </section>
-
-
-        <section class="container-fluid sixth_container p-5">
-          <article class="container sixth_container_header">
-            <h3>Find Out How We Help Student</h3>
-            <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, libero omnis repellat ex quo aliquid ipsa culpa facere quam officia expedita qui voluptates distinctio vel harum ut praesentium modi quae?</p>
-          </article>
-
-          <div class="container mb-3 sixth_container_img justify-content-center ">
-             <img src="./dinnyimages/Group 69.png" width="700px" height="400px" alt="">
+            <article class="feature_text">
+              <h5>Extra cirricular activities</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod ukkf tempor incididunt u.
+              </p>
+            </article>
           </div>
 
-          
-        </section>
-
-        <section class="container-fluid seventh_container">
-
-          <h3>Success Stories</h3>
-          <div class="container d-flex seventh_container_img mt-4">
-            <img class="seventh_first_img me-5" src="./dinnyimages/Ellipse 21.png" width="150px" height="150px" alt="">
-            <img class="seventh_second_img me-5" src="./dinnyimages/yogendra-singh-jWGNA5VIMRg-unsplash 1.png" width="200px" height="200px" alt="">
-            <img class="seventh_third_img" src="./dinnyimages/james-timothy-m8uLhKTiL8Y-unsplash 1.png" width="150px" height="150px" alt="">
-
+          <div class="container container_content d-flex">
+            <div class="container feature_img">
+              <img src="./dinnyimages/Ellipse 8.png" alt="" />
+            </div>
+            <article class="feature_text">
+              <h5>Government Approved</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod ukkf tempor incididunt u.
+              </p>
+            </article>
           </div>
-          <article class="container seventh_content mt-4 mb-3">
-            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. A sint inventore saepe animi quasi minus vitae enim vel eius? Nemo error voluptas corporis libero labore. Amet explicabo impedit nesciunt maiores! Lorem ipsum dolor, sit amet consectetur sequi dolores dolor? Deleniti suscipit exercitationem in sit doloribus.</p>
+        </div>
+      </section>
 
-          </article>
-        </section>
+      <section class="fourth_container" id="service">
+        <div class="d-flex fourth_container_div">
+          <div class="container fourth_container_content">
+            <h2>Find Out More About Our Learning Experience</h2>
+            <p>
+              We have built hospitals, arranged doctor appointments have the
+              diagnose and treat yourem ipsu r aol ad meniam, quis nostrud
+              exercitation.
+            </p>
 
-        <section class="container-fluid eight_container pt-5 pb-5">
-          <article class="container eight_content pt-5 text-center"> 
-            <h2>Our Instructors & Teachers</h2>
-            <p class="mt-3">We have the best teachers and Instructors that would be able to train your kids, making them Creative, God fearing,Receptful and intelligent.</p>
-          </article>
+            <ul>
+              <li>Culture in diversity</li>
+              <li>We have built hospitals, arranged doctor.</li>
+              <li>We have built hospitals, arranged doctor.</li>
+            </ul>
+            <button class="btn">Learn more</button>
+          </div>
 
-          <div class="eight_img d-flex m-5 justify-content-center justify-content-between">
+          <div class="fourth_container_img">
+            <img
+              src="./dinnyimages/Group 64.png"
+              width="600px"
+              height="400px"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
 
-            <!-- Card -->
-            <div class="card eight_card1 ">
-              <div class="card-body">
-                <a href="#" class="btn h2">Full time</a>
-                <h5 class="card-title">Masters in Geology</h5>
+      <section class="container-fluid fifth_container p-5" id="register">
+        <article class="container fifth_container_header">
+          <h3>Popular Classes</h3>
+          <p class="text-center">
+            We have built hospitals, arranged doctor appointments have the
+            diagnose and treat yourem ipsu r aol ad meniam, quis nostrud
+            exercitation.
+          </p>
+        </article>
+
+        <div
+          class="container-fluid mt-5 mb-5 fifth_container_div row justify-content-between justify-content-center"
+        >
+          <!-- card -->
+          <div class="card card_container col-4">
+            <div class="card-img-top pt-3 justify-content-center">
+              <img class="d-block" src="./dinnyimages/Ellipse 16.png" alt="" />
+            </div>
+            <div class="card-body mb-4">
+              <div class="card_body_top d-flex justify-content-center mb-2">
+                <p class="card-text me-3">35 Lessons</p>
                 <p class="card-text">28th April 2021</p>
               </div>
+              <h5 class="card-title text-center">Creche</h5>
+              <p class="card-text text-center">
+                For anyone validating Framer as a professional prototyping tool.
+              </p>
             </div>
+            <div class="enroll_now1 text-center"><p>Enroll Now</p></div>
+          </div>
 
-            <!-- Card -->
-            <div class="card eight_card2 ">
-              <div class="card-body">
-                <a href="#" class="btn h2">Full time</a>
-                <h5 class="card-title">Masters in Geology</h5>
+          <!-- card -->
+          <div class="card card_container col-4">
+            <div class="card-img-top pt-3 justify-content-center">
+              <img class="d-block" src="./dinnyimages/Ellipse 17.png" alt="" />
+            </div>
+            <div class="card-body mb-4">
+              <div class="card_body_top d-flex justify-content-center mb-2">
+                <p class="card-text me-3">35 Lessons</p>
                 <p class="card-text">28th April 2021</p>
               </div>
+              <h5 class="card-title text-center">Transiton</h5>
+              <p class="card-text text-center">
+                For anyone validating Framer as a professional prototyping tool.
+              </p>
+            </div>
+            <div class="enroll_now text-center"><p>Enroll Now</p></div>
+          </div>
+
+          <!-- card -->
+          <div class="card card_container col-4">
+            <div class="card-img-top pt-3 justify-content-center">
+              <img class="d-block" src="./dinnyimages/Ellipse 18.png" alt="" />
+            </div>
+            <div class="card-body mb-4">
+              <div class="card_body_top d-flex justify-content-center mb-2">
+                <p class="card-text me-3">35 Lessons</p>
+                <p class="card-text">28th April 2021</p>
+              </div>
+              <h5 class="card-title text-center">Nursery</h5>
+              <p class="card-text text-center">
+                For anyone validating Framer as a professional prototyping tool.
+              </p>
+            </div>
+            <div class="enroll_now text-center"><p>Enroll Now</p></div>
+          </div>
+        </div>
+        <div class="container fifth_container_btn">
+          <button class="btn">view all Courses</button>
+        </div>
+      </section>
+
+      <section class="container-fluid sixth_container p-5">
+        <article class="container sixth_container_header">
+          <h3>Find Out How We Help Student</h3>
+          <p class="mt-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur,
+            libero omnis repellat ex quo aliquid ipsa culpa facere quam officia
+            expedita qui voluptates distinctio vel harum ut praesentium modi
+            quae?
+          </p>
+        </article>
+
+        <div class="container mb-3 sixth_container_img justify-content-center">
+          <img
+            src="./dinnyimages/Group 69.png"
+            width="700px"
+            height="400px"
+            alt=""
+          />
+        </div>
+      </section>
+
+      <section class="container-fluid seventh_container" id="blog">
+        <h3>Success Stories</h3>
+        <div class="container d-flex seventh_container_img mt-4">
+          <img
+            class="seventh_first_img me-5"
+            src="./dinnyimages/Ellipse 21.png"
+            width="150px"
+            height="150px"
+            alt=""
+          />
+          <img
+            class="seventh_second_img me-5"
+            src="./dinnyimages/yogendra-singh-jWGNA5VIMRg-unsplash 1.png"
+            width="200px"
+            height="200px"
+            alt=""
+          />
+          <img
+            class="seventh_third_img"
+            src="./dinnyimages/james-timothy-m8uLhKTiL8Y-unsplash 1.png"
+            width="150px"
+            height="150px"
+            alt=""
+          />
+        </div>
+        <article class="container seventh_content mt-4 mb-3">
+          <p class="text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A sint
+            inventore saepe animi quasi minus vitae enim vel eius? Nemo error
+            voluptas corporis libero labore. Amet explicabo impedit nesciunt
+            maiores! Lorem ipsum dolor, sit amet consectetur sequi dolores
+            dolor? Deleniti suscipit exercitationem in sit doloribus.
+          </p>
+        </article>
+      </section>
+
+      <section
+        class="container-fluid eight_container pt-5 pb-5"
+        id="instructors"
+      >
+        <article class="container eight_content pt-5 text-center">
+          <h2>Our Instructors & Teachers</h2>
+          <p class="mt-3">
+            We have the best teachers and Instructors that would be able to
+            train your kids, making them Creative, God fearing,Receptful and
+            intelligent.
+          </p>
+        </article>
+
+        <div
+          class="eight_img d-flex m-5 justify-content-center justify-content-between"
+        >
+          <!-- Card -->
+          <div class="card eight_card1">
+            <div class="card-body">
+              <a href="#" class="btn h2">Full time</a>
+              <h5 class="card-title">Masters in Geology</h5>
+              <p class="card-text">28th April 2021</p>
+            </div>
+          </div>
+
+          <!-- Card -->
+          <div class="card eight_card2">
+            <div class="card-body">
+              <a href="#" class="btn h2">Full time</a>
+              <h5 class="card-title">Masters in Geology</h5>
+              <p class="card-text">28th April 2021</p>
+            </div>
+          </div>
+
+          <!-- Card -->
+          <div class="card eight_card3">
+            <div class="card-body">
+              <a href="#" class="btn h2">Full time</a>
+              <h5 class="card-title">Masters in Geology</h5>
+              <p class="card-text">28th April 2021</p>
+            </div>
+          </div>
+        </div>
+        <div class="eight_btn container mb-3">
+          <button class="btn">See all</button>
+        </div>
+      </section>
+
+      <section class="container-fluid ninth_container" id="contact">
+        <h3 class="text-center">Contact Us</h3>
+
+        <div class="container form_container mt-4 justify-content-center">
+          <form>
+            <div class="d-flex form_row">
+              <div class="form-group form_name me-3">
+                <input type="text" class="form-control" placeholder="Name" />
+              </div>
+              <div class="form-group form_email">
+                <input type="email" class="form-control" placeholder="Email" />
+              </div>
             </div>
 
-              <!-- Card -->
-              <div class="card eight_card3 ">
-                <div class="card-body">
-                  <a href="#" class="btn h2">Full time</a>
-                  <h5 class="card-title">Masters in Geology</h5>
-                  <p class="card-text">28th April 2021</p>
-                </div>
+            <div class="d-flex form_row">
+              <div class="form-group form_number me-3">
+                <input type="number" class="form-control" placeholder="Phone" />
               </div>
-
-          </div>
-          <div class="eight_btn container mb-3">
-            <button class="btn">See all</button>
-          </div>
-
-        </section>
-
-        <section class="container-fluid ninth_container">
-          <h3 class="text-center">Contact Us</h3>
-
-          <div class="container form_container mt-4 justify-content-center">
-            <form >
-              <div class="d-flex form_row ">
-                <div class="form-group form_name me-3">
-                  <input type="text" class="form-control" placeholder="Name">
-                </div>
-                <div class="form-group form_email">
-                  <input type="email" class="form-control" placeholder="Email">
-                </div>
+              <div class="form-group form_subject">
+                <input type="text" class="form-control" placeholder="Subject" />
               </div>
+            </div>
 
-                <div class="d-flex form_row  ">
-                  <div class="form-group form_number me-3">
-                    <input type="number" class="form-control" placeholder="Phone">
-                  </div>
-                  <div class="form-group form_subject">
-                    <input type="text" class="form-control" placeholder="Subject">
-                  </div>
-                </div>
+            <div class="justify-content-center">
+              <textarea
+                name="Message"
+                class="form-control"
+                cols="20"
+                rows="5"
+                placeholder="Message"
+              ></textarea>
+            </div>
 
-                <div class="justify-content-center ">
-                  <textarea name="Message" class="form-control" cols="20" rows="5" placeholder="Message"></textarea>
-                </div>
-
-                <button type="submit" class="btn btn-default mt-4 ">send now</button>
-
-            </form>
-          </div>
-
-        </section>
-
+            <button type="submit" class="btn btn-default mt-4">send now</button>
+          </form>
+        </div>
+      </section>
     </main>
 
     <footer>
-      <div class="container footer_container pb-5 row pt-5  mb-3 justify-content-center">
+      <div
+        class="container footer_container pb-5 row pt-5 mb-3 justify-content-center"
+      >
         <div class="container footer_content col-4">
-          <img src="./dinnyimages/logo.png" alt="">
-          <p class="mt-3">Replenish him third creature and meat blessed void a fruit gathered you're, they're two waters own morning gathered greater.</p>
+          <img src="./dinnyimages/logo.png" alt="" />
+          <p class="mt-3">
+            Replenish him third creature and meat blessed void a fruit gathered
+            you're, they're two waters own morning gathered greater.
+          </p>
         </div>
 
-        <div class=" container footer_list col-2">
+        <div class="container footer_list col-2">
           <h6>About Us</h6>
           <ul>
-          <li>Affiliates</li>
-          <li>Partners</li>
-          <li>Reviews</li>
-          <li>Blogs</li>
+            <li>Affiliates</li>
+            <li>Partners</li>
+            <li>Reviews</li>
+            <li>Blogs</li>
           </ul>
         </div>
 
         <div class="container footer_list col-2">
           <h6>Popular Classes</h6>
           <ul>
-          <li>Creche</li>
-          <li>Primary</li>
-          <li>Secondary</li>
-          <li>Highschool</li>
+            <li>Creche</li>
+            <li>Primary</li>
+            <li>Secondary</li>
+            <li>Highschool</li>
           </ul>
         </div>
-  
+
         <div class="container footer_content col-4">
           <h6>Newsletter</h6>
-          <p class="mb-3">Sign up to newsletter to get
-            Latest updates</p>
-            <form >
-              <div class="input-group mb-3">
-                <input type="email" class="form-control" placeholder="Enter Email address">
-                <button class="btn btn-primary" type="button">OK</button>
-            
-              
-              </div>
-            </form>
+          <p class="mb-3">Sign up to newsletter to get Latest updates</p>
+          <form>
+            <div class="input-group mb-3">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Enter Email address"
+              />
+              <button class="btn btn-primary" type="button">OK</button>
+            </div>
+          </form>
 
-            <img src="./dinnyimages/Frame 2.png" alt="">
+          <img src="./dinnyimages/Frame 2.png" alt="" />
         </div>
-  
-
       </div>
 
-      <p class="text-center copy_right pb-3">Copyright @ 2020 Dinnygreen International</p>
-
-      
+      <p class="text-center copy_right pb-3">
+        Copyright @ 2020 Dinnygreen International
+      </p>
     </footer>
-    
-</body>
+  </body>
 </html>
