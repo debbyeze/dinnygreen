@@ -1,531 +1,465 @@
-
 @import "variable";
 @import "reset";
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    
-// header style 
-header{
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,300&family=Rubik&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+
+  // header style
+  header {
     // nav_top
-    .nav_top{
-        background-color: $whitish;
-        padding: 3px 50px;
-    
+    .nav_top {
+      background-color: $whitish;
+      padding: 3px 50px;
 
-        .nav_top_list{
-           ul{
-               flex-wrap: wrap;
-               li{
-                   color:$darkergreen ;
-                   .list_span{
-                       color:$darkergreen ;
-                   }
-               }
-               
-           }
-        }
-        .nav_top_btn{
-            .login_btn{
-                color: $lightgreen;
-                background-color: $white;
+      .nav_top_list {
+        ul {
+          flex-wrap: wrap;
+          li {
+            color: $darkergreen;
+            .list_span {
+              color: $darkergreen;
             }
-            .register-btn{
-                padding: 1px 13px;
-                @media screen {
-                    
-                }
-            }
-            
+          }
         }
-
+      }
+      .nav_top_btn {
+        .login_btn {
+          color: $lightgreen;
+          background-color: $white;
+        }
+        .register-btn {
+          padding: 1px 13px;
+          $small:300px;
+          $medium:900px;
+          @media screen and (min-width: $small) and (max-width: $medium) {
+            padding: 2px;
+            height: 50px;
+            color: black !important;
+          }
+        }
+      }
     }
     // nav_bar
-    .nav_bar{
-        background-color: $darkergreen;
-        position: -webkit-sticky;
+    .nav_bar {
+      background-color: $darkergreen;
+      position: -webkit-sticky;
+      position: sticky;
+
+      padding-left: 70px;
+
+      .nav_container {
         position: sticky;
-       
-       padding-left: 70px;
+        .navbar_list {
+          color: $white;
+          ul {
+            margin-left: 150px;
 
-        .nav_container{  
-            position: sticky;       
-         .navbar_list{
-             color: $white;
-            ul{
-                margin-left: 150px;
-
-                li{
-                    margin-right: 60px;
-                    a{
-                        color: $white;
-                        :visited{
-                            color: $white;
-                        }
-                        :hover{
-                            cursor: pointer;
-                            color: $white;
-                              
-                        } 
-                        :active{
-                            color: $lightgreen;
-                        } 
-                            
-                    }
+            li {
+              margin-right: 60px;
+              a {
+                color: $white;
+                :visited {
+                  color: $white;
                 }
+                :hover {
+                  cursor: pointer;
+                  color: $white;
+                }
+                :active {
+                  color: $lightgreen;
+                }
+              }
             }
-            
-         }
+          }
         }
-
+      }
     }
-}
+  }
 
-// first_container
-main{
+  // first_container
+  main {
     display: block;
     padding: 0;
     margin: 0;
-    .first_container{
-        background-image: url(./dinnyimages/img1.png);
+    .first_container {
+      background-image: url(./dinnyimages/img1.png);
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 85vh;
+      position: relative;
+      .first_container_content {
+        width: 450px;
+        position: absolute;
+        top: 150px;
+        left: 60px;
+        h1 {
+          font-weight: bold;
+        }
+
+        .signin_paragraph {
+          margin-bottom: 30px;
+          a {
+            text-decoration: none;
+            color: $lemon;
+          }
+        }
+      }
+      .first_container_btn {
+        .learnmore_btn {
+          background-color: $lightblue;
+          color: $darkgreen;
+          margin-left: 40px;
+        }
+      }
+      .blur_container {
+        height: 12vh;
+        width: 99%;
+        background-image: url("./dinnyimages/Rectangle\ 11.png");
         background-repeat: no-repeat;
-        width: 100%;
-        height: 85vh;
-        position: relative;
-        .first_container_content{
-            
-            width: 450px;
-            position: absolute;
-            top: 150px;
-            left: 60px;
-            h1{
-                font-weight: bold;
-            }
-            
-            .signin_paragraph{
-                margin-bottom: 30px;
-                a{
-                    text-decoration: none;
-                    color: $lemon;
-                }
-            }
-        }
-        .first_container_btn{
-
-            .learnmore_btn{
-                background-color: $lightblue;
-                color: $darkgreen;
-                margin-left: 40px;
-            
-            }
-        }
-        .blur_container{
-            height: 12vh;
-            width: 99%;
-            background-image: url("./dinnyimages/Rectangle\ 11.png");
-            background-repeat: no-repeat;
-            // background: rgba(0, 52, 18, 0.35);
-            //  backdrop-filter: blur(33px);
-            position: absolute;
-            top: 500px;
-        }
+        // background: rgba(0, 52, 18, 0.35);
+        //  backdrop-filter: blur(33px);
+        position: absolute;
+        top: 500px;
+      }
     }
-
 
     // second_container
-    .second_container{
-        background-color: $whiten;
-        width: 100%;
-        height: auto;
-        position: relative;
-       
-        
-       .second_container_div{
-           padding-top: 170px;
-           padding-bottom: 70px;
-           
-           
-        .second_container_content{
-            padding: 20px;
-            width: 600px;
-        
-                p{
-                    padding-right: 8rem;
-                    
-                }
-                .figure_container{
+    .second_container {
+      background-color: $whiten;
+      width: 100%;
+      height: auto;
+      position: relative;
 
-                   
-                  .figure{
-                      border-right: 3px solid $border;
-                      border-radius: 2px;
-                      
-                    
-                    h1{
-                        margin-bottom: 3px;
+      .second_container_div {
+        padding-top: 170px;
+        padding-bottom: 70px;
 
-                    }
-                   
-                  }
-                }
+        .second_container_content {
+          padding: 20px;
+          width: 600px;
+
+          p {
+            padding-right: 8rem;
+          }
+          .figure_container {
+            .figure {
+              border-right: 3px solid $border;
+              border-radius: 2px;
+
+              h1 {
+                margin-bottom: 3px;
+              }
+            }
+          }
         }
-        
-            
-        }
-        .side_img{
-
-            position: absolute;
-            top: 900px;
-            left:100%;
-       }
-
-       
+      }
+      .side_img {
+        position: absolute;
+        top: 900px;
+        left: 100%;
+      }
     }
     // .third_container
-    .third_container{
-        background-image: url("./dinnyimages/Mask\ Group (1).png");
-        width: 100%;
-        height: auto;
-        justify-content: space-between;
-        padding-bottom: 40px;
+    .third_container {
+      background-image: url("./dinnyimages/Mask\ Group (1).png");
+      width: 100%;
+      height: auto;
+      justify-content: space-between;
+      padding-bottom: 40px;
 
-        .features_header_page{
-            justify-items: center;
-            width: 50%;
-            padding-top: 60px;
-            margin-bottom: 30px;
-            
-            
-            
-            h3{
-                text-align: center;
-            }
-            p{
-                color: $white;
-                text-align: center;
-            }
-        }
-        .feature_content{
-            flex-wrap: wrap;
-            justify-content: center;
-            .container_content{
-                background-color: $white;
-                width: 500px;
-                height: 150px;
-                margin: 10px;
-                justify-content: center;
-                padding-top: 20px;
-               
-
-            
-                
-                .feature_img{
-                    width: 200px;
-                    justify-content: center;
-                    padding-top: 5px;
-                  
-                }
-                .feature_text{
-                  justify-content: center;
-                }
-            }
-        }
-    }
-    .fourth_container{
-        background-color: $whiten;
-        width: 100%;
-        height: auto;
-        
-        
-
-        .fourth_container_div{
-            padding-top: 90px;
-            padding-bottom: 80px;
-            justify-content: flex-end;
-            flex-wrap: wrap;
-            
-            .fourth_container_content{
-                width: 34%;
-                padding-top: 20px;
-                margin-left: 150px;
-                padding-right: 5px;
-                h2{
-                    margin-bottom: 25px;
-                    font-weight: 700;
-                }
-                ul{
-                    list-style: none;
-                    color: $gray;
-                    margin-top: 20px;
-                    margin-bottom: 28px;
-                }
-            }
-
-
-            .fourth_container_img{
-        
-                margin-left: 4px;
-                
-                img{
-                    border-bottom-left-radius: 40px;
-                    
-                    
-                }
-            }
-        }
-    }
-
-    .fifth_container{
-        width: 100%;
-        height: auto;
-        background-color: $grey;
-    
-
-        .fifth_container_header{
-            justify-content: center;
-            text-align: center;
-            // padding-top: 80px;
-            width: 650px;
-            h3{
-                color: $lightgreen;
-                margin-bottom: 20px;
-            }
-        }
-        .fifth_container_div{
-            .card_container{
-                width: 300px;
-                .card-img-top{
-                   margin-left: 30px;
-                }
-                .enroll_now1{
-                    background-color: $lightgreen;
-                    border-radius: 4px;
-                    height: 40px;
-                    padding-top: 7px;
-                    
-                    p{
-                        color: $white;
-                    }
-                }
-                .enroll_now{
-                    border-top: 1px solid $lightgreen;
-                    border-bottom: 4px solid $lightgreen;
-                    border-radius: 4px;
-                    height: 40px;
-                    padding-top: 7px;
-                    p{
-                        color: $lightgreen;
-                    }
-                }
-            }
-        }
-        
-        .fifth_container_btn{
-            margin-top: 30px;
-            display: flex;
-            justify-content: center;
-            
-        }
-
-        
-    }
-
-    .sixth_container{
-        background-color: $whitish;
-        width: 100%;
-        height: auto;
-        justify-content: center;
-        .sixth_container_header{
-            width: 50%;
-            text-align: center;
-            h3{
-                color: $lightgreen;
-            }
-        }
-        .sixth_container_img{
-         margin: auto;
-         width: 800px;
-         img{
-             margin-left: 45px;
-         }
-         
-
-            
-  
-        }
-        
-    }
-    .seventh_container{
+      .features_header_page {
+        justify-items: center;
+        width: 50%;
         padding-top: 60px;
-        padding-bottom: 40px;
-        background-image: url("./dinnyimages/Rectangle\ 81.png");
-        width: 100%;
-        height: auto;
-        h3{
-            text-align: center;
-            color: $whiten;
-            
+        margin-bottom: 30px;
+
+        h3 {
+          text-align: center;
         }
-       .seventh_container_img{
-           justify-content: center;
-           width: 800px;
-           
-           .seventh_first_img{
-               border-radius: 50%;
-               margin-top: 25px;
-           }
-           .seventh_second_img{
-               padding: 3px;
-               border: 2px dashed $white;
-               border-radius: 50%;
-           }
-           .seventh_third_img{
-            border-radius: 50%;
-            margin-top: 25px;
-
-           }
-       }
-       .seventh_content{
-           width:900px;
-       }
-    }
-
-
-    .eight_container{
-        background-color: $whiten;
-        width: 100%;
-        height: auto;
-        .eight_content{
-            width: 50%;
+        p {
+          color: $white;
+          text-align: center;
         }
-        .eight_img{
-            flex-wrap: wrap;
-           .card{
-            .card-body{
-                background: linear-gradient(180deg, rgba(3, 140, 51, 0) 22.57%, rgba(3, 140, 51, 0.596123) 83.65%, #038C33 100%);
-                color: $white;
-                margin-top: 70%;
-                .btn{
-                    background-color: $lightblue;
-                    color: $lightgreen;
-    
-               }
-               h5{
-                   color: $white;
-               }
-               p{
-                   color: $white;
-               }
-            
-            }
-            
+      }
+      .feature_content {
+        flex-wrap: wrap;
+        justify-content: center;
+        .container_content {
+          background-color: $white;
+          width: 500px;
+          height: 150px;
+          margin: 10px;
+          justify-content: center;
+          padding-top: 20px;
 
-            }
-            .eight_card1{
-                width: 350px;
-                background-image: url("./dinnyimages/christina-wocintechchat-com-3ok_-Wvny2Q-unsplash\ 1.png");
-                background-repeat: no-repeat;
-            }
-            .eight_card2{
-                width: 350px;
-                background-image: url("./dinnyimages/trust-tru-katsande-SRdK0SQjasE-unsplash\ 1.png");
-                background-repeat: no-repeat;
-
-            }
-            .eight_card3{
-                width: 350px;
-                background-image: url("./dinnyimages/Rectangle\ 89.png");
-                background-repeat: no-repeat;
-            }
-            
-        }
-        .eight_btn{
+          .feature_img {
             width: 200px;
             justify-content: center;
-        }
-    }
-
-    .ninth_container{
-        background-color: $white;
-        width: 100%;
-        height: auto;
-        padding: 50px;
-        h3{
-            color: $lightgreen;
-        }
-        .form_container{
-            width: 700px;
+            padding-top: 5px;
+          }
+          .feature_text {
             justify-content: center;
-            .form_row{
-                input{
-                    width: 330px;
-                }
-            }
-            button{
-                margin: 0 40%
-            }
-
+          }
         }
+      }
     }
-   
+    .fourth_container {
+      background-color: $whiten;
+      width: 100%;
+      height: auto;
 
+      .fourth_container_div {
+        padding-top: 90px;
+        padding-bottom: 80px;
+        justify-content: flex-end;
+        flex-wrap: wrap;
 
+        .fourth_container_content {
+          width: 34%;
+          padding-top: 20px;
+          margin-left: 150px;
+          padding-right: 5px;
+          h2 {
+            margin-bottom: 25px;
+            font-weight: 700;
+          }
+          ul {
+            list-style: none;
+            color: $gray;
+            margin-top: 20px;
+            margin-bottom: 28px;
+          }
+        }
 
-}
-footer{
+        .fourth_container_img {
+          margin-left: 4px;
+
+          img {
+            border-bottom-left-radius: 40px;
+          }
+        }
+      }
+    }
+
+    .fifth_container {
+      width: 100%;
+      height: auto;
+      background-color: $grey;
+
+      .fifth_container_header {
+        justify-content: center;
+        text-align: center;
+        // padding-top: 80px;
+        width: 650px;
+        h3 {
+          color: $lightgreen;
+          margin-bottom: 20px;
+        }
+      }
+      .fifth_container_div {
+        .card_container {
+          width: 300px;
+          .card-img-top {
+            margin-left: 30px;
+          }
+          .enroll_now1 {
+            background-color: $lightgreen;
+            border-radius: 4px;
+            height: 40px;
+            padding-top: 7px;
+
+            p {
+              color: $white;
+            }
+          }
+          .enroll_now {
+            border-top: 1px solid $lightgreen;
+            border-bottom: 4px solid $lightgreen;
+            border-radius: 4px;
+            height: 40px;
+            padding-top: 7px;
+            p {
+              color: $lightgreen;
+            }
+          }
+        }
+      }
+
+      .fifth_container_btn {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    .sixth_container {
+      background-color: $whitish;
+      width: 100%;
+      height: auto;
+      justify-content: center;
+      .sixth_container_header {
+        width: 50%;
+        text-align: center;
+        h3 {
+          color: $lightgreen;
+        }
+      }
+      .sixth_container_img {
+        margin: auto;
+        width: 800px;
+        img {
+          margin-left: 45px;
+        }
+      }
+    }
+    .seventh_container {
+      padding-top: 60px;
+      padding-bottom: 40px;
+      background-image: url("./dinnyimages/Rectangle\ 81.png");
+      width: 100%;
+      height: auto;
+      h3 {
+        text-align: center;
+        color: $whiten;
+      }
+      .seventh_container_img {
+        justify-content: center;
+        width: 800px;
+
+        .seventh_first_img {
+          border-radius: 50%;
+          margin-top: 25px;
+        }
+        .seventh_second_img {
+          padding: 3px;
+          border: 2px dashed $white;
+          border-radius: 50%;
+        }
+        .seventh_third_img {
+          border-radius: 50%;
+          margin-top: 25px;
+        }
+      }
+      .seventh_content {
+        width: 900px;
+      }
+    }
+
+    .eight_container {
+      background-color: $whiten;
+      width: 100%;
+      height: auto;
+      .eight_content {
+        width: 50%;
+      }
+      .eight_img {
+        flex-wrap: wrap;
+        .card {
+          .card-body {
+            background: linear-gradient(
+              180deg,
+              rgba(3, 140, 51, 0) 22.57%,
+              rgba(3, 140, 51, 0.596123) 83.65%,
+              #038c33 100%
+            );
+            color: $white;
+            margin-top: 70%;
+            .btn {
+              background-color: $lightblue;
+              color: $lightgreen;
+            }
+            h5 {
+              color: $white;
+            }
+            p {
+              color: $white;
+            }
+          }
+        }
+        .eight_card1 {
+          width: 350px;
+          background-image: url("./dinnyimages/christina-wocintechchat-com-3ok_-Wvny2Q-unsplash\ 1.png");
+          background-repeat: no-repeat;
+        }
+        .eight_card2 {
+          width: 350px;
+          background-image: url("./dinnyimages/trust-tru-katsande-SRdK0SQjasE-unsplash\ 1.png");
+          background-repeat: no-repeat;
+        }
+        .eight_card3 {
+          width: 350px;
+          background-image: url("./dinnyimages/Rectangle\ 89.png");
+          background-repeat: no-repeat;
+        }
+      }
+      .eight_btn {
+        width: 200px;
+        justify-content: center;
+      }
+    }
+
+    .ninth_container {
+      background-color: $white;
+      width: 100%;
+      height: auto;
+      padding: 50px;
+      h3 {
+        color: $lightgreen;
+      }
+      .form_container {
+        width: 700px;
+        justify-content: center;
+        .form_row {
+          input {
+            width: 330px;
+          }
+        }
+        button {
+          margin: 0 40%;
+        }
+      }
+    }
+  }
+  footer {
     background-color: $darkergreen;
     color: $white;
-    .footer_container{
-        border-bottom: 1px ridge $whiten;
-        justify-content: center;
-        
-        margin: auto;
-        .container{
-            padding-right: 50px;
-            p{
-                color: $white;
-            }
-            h6{
-                border-bottom: 2px solid $lightblue;
-                margin-bottom: 20px;
-                padding-bottom: 10px;
-                
-            }
-            
-        
-            
-            
+    .footer_container {
+      border-bottom: 1px ridge $whiten;
+      justify-content: center;
+
+      margin: auto;
+      .container {
+        padding-right: 50px;
+        p {
+          color: $white;
         }
-        .footer_list{
-            ul{
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                li{
-                    padding-bottom: 5px;
-                }
-
-                
-            }
-            h6{
-                border-bottom: 2px solid $lightblue;
-                margin-bottom: 20px;
-                padding-bottom: 10px;
-                
-            }
+        h6 {
+          border-bottom: 2px solid $lightblue;
+          margin-bottom: 20px;
+          padding-bottom: 10px;
         }
+      }
+      .footer_list {
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          li {
+            padding-bottom: 5px;
+          }
+        }
+        h6 {
+          border-bottom: 2px solid $lightblue;
+          margin-bottom: 20px;
+          padding-bottom: 10px;
+        }
+      }
     }
-    .copy_right{
-            color: $whiten;
-        
+    .copy_right {
+      color: $whiten;
     }
-   
+  }
 }
-
-
-
-
-
-}
-

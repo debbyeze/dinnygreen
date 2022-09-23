@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,300&family=Rubik&display=swap");
 h1 {
   color: #038C33;
   margin-bottom: 20px;
@@ -31,6 +32,7 @@ p {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 * header .nav_top {
@@ -58,6 +60,14 @@ p {
 
 * header .nav_top .nav_top_btn .register-btn {
   padding: 1px 13px;
+}
+
+@media screen and (min-width: 300px) and (max-width: 900px) {
+  * header .nav_top .nav_top_btn .register-btn {
+    padding: 2px;
+    height: 50px;
+    color: black !important;
+  }
 }
 
 * header .nav_bar {
@@ -431,8 +441,8 @@ p {
 }
 
 * main .eight_container .eight_img .card .card-body {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(22.57%, rgba(3, 140, 51, 0)), color-stop(83.65%, rgba(3, 140, 51, 0.596123)), to(#038C33));
-  background: linear-gradient(180deg, rgba(3, 140, 51, 0) 22.57%, rgba(3, 140, 51, 0.596123) 83.65%, #038C33 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(22.57%, rgba(3, 140, 51, 0)), color-stop(83.65%, rgba(3, 140, 51, 0.596123)), to(#038c33));
+  background: linear-gradient(180deg, rgba(3, 140, 51, 0) 22.57%, rgba(3, 140, 51, 0.596123) 83.65%, #038c33 100%);
   color: #F2F2F2;
   margin-top: 70%;
 }
